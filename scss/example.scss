@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+
+.original {
+  @import "wapuu";
+
+  &.mq {
+    @media (max-width: 400px) and (min-width: 320px){
+      $wapuu-scale: 0.8;
+      @import "wapuu";
+    }
+    @media (max-width: 320px) {
+      $wapuu-scale: 0.5;
+      @import "wapuu";
+    }
+  }
+
+}
+
+.w2x {
+  $wapuu-scale: 2;
+  @import "wapuu";
+}
+
+body {
+  text-align: center;
+  background-color: #5A969E;
+  .canvas {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+footer {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #1f1f1f;
+  color: #6391E4;
+  border-radius: 20px;
+  padding: 20px;
+  border: gray 2px solid;
+  box-shadow: #000 1px 1px 1px;
+  & a{
+    color: darken(#6391E4, 15%);
+  }
+
+}

@@ -1,0 +1,1509 @@
+/*!
+
+Scaleable SCSS Wapuu
+
+
+Copyright 2015 by hinaloe original:mismith0227 / カネウチカズコ
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+
+*/
+
+$wapuu-scale: 1 !default;
+
+.canvas {
+	position: relative;
+  width: 400px * $wapuu-scale;
+  height: 400px * $wapuu-scale;
+}
+
+/*---------------------------------------
+
+  線
+
+---------------------------------------*/
+
+.line1 {
+  background-color: #000;
+  width: 234px * $wapuu-scale;
+  height: 293px * $wapuu-scale;
+  position: absolute;
+  top: 8px * $wapuu-scale;
+  left: 83px * $wapuu-scale;
+  border-radius: #{120px * $wapuu-scale 108px * $wapuu-scale 129px * $wapuu-scale 118px * $wapuu-scale} / #{119px * $wapuu-scale 145px * $wapuu-scale 109px * $wapuu-scale 145px * $wapuu-scale};
+}
+
+.line1::after {
+	content: "";
+	background-color: #000;
+	width: 238px * $wapuu-scale;
+	height: 260px * $wapuu-scale;
+	position: absolute;
+	left: -19px * $wapuu-scale;
+	bottom: -5px * $wapuu-scale;
+	border-radius: #{140px * $wapuu-scale 140px * $wapuu-scale 120px * $wapuu-scale 142px * $wapuu-scale} / #{148px * $wapuu-scale 141px * $wapuu-scale 100px * $wapuu-scale 105px * $wapuu-scale};
+	-webkit-transform: rotate(-114deg);
+  	   -moz-transform: rotate(-114deg);
+  	    -ms-transform: rotate(-114deg);
+  	     -o-transform: rotate(-114deg);
+  	        transform: rotate(-114deg);
+}
+
+.line1::before {
+  content: "";
+  background-color: #000;
+  width: 128px * $wapuu-scale;
+  height: 69px * $wapuu-scale;
+  position: absolute;
+  top: 125px * $wapuu-scale;
+  left: 138px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(-89deg);
+     -moz-transform: rotate(-89deg);
+      -ms-transform: rotate(-89deg);
+       -o-transform: rotate(-89deg);
+          transform: rotate(-89deg);
+}
+
+.line2 {
+	background-color: #000;
+  width: 64px * $wapuu-scale;
+  height: 24px * $wapuu-scale;
+  position: absolute;
+  top: 75px * $wapuu-scale;
+  left: 66px * $wapuu-scale;
+  border-radius: #{112px * $wapuu-scale} / #{89px * $wapuu-scale};
+}
+
+.line2::after {
+	content: "";
+	background-color: #000;
+  width: 44px * $wapuu-scale;
+  height: 18px * $wapuu-scale;
+  position: absolute;
+  top: -6px * $wapuu-scale;
+  left: 3px * $wapuu-scale;
+  border-radius: #{72px * $wapuu-scale 14px * $wapuu-scale 12px * $wapuu-scale 14px * $wapuu-scale} / #{14px * $wapuu-scale 35px * $wapuu-scale 5px * $wapuu-scale 9px * $wapuu-scale};
+  -webkit-transform: rotate(148deg);
+     -moz-transform: rotate(148deg);
+      -ms-transform: rotate(148deg);
+       -o-transform: rotate(148deg);
+          transform: rotate(148deg);
+}
+
+/*---------------------------------------
+
+  ボールの部分
+
+---------------------------------------*/
+.ball {
+	background: #035683;
+	width: 214px * $wapuu-scale;
+	height: 214px * $wapuu-scale;
+	position: absolute;
+  top: 74px * $wapuu-scale;
+  left: 60px * $wapuu-scale;
+	border-radius: 50%;
+}
+
+.ball2 {
+  background-color: #035683;
+  width: 51px * $wapuu-scale;
+  height: 12px * $wapuu-scale;
+  position: absolute;
+  top: 124px * $wapuu-scale;
+  left: 200px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(-166deg);
+     -moz-transform: rotate(-166deg);
+      -ms-transform: rotate(-166deg);
+       -o-transform: rotate(-166deg);
+          transform: rotate(-166deg);
+  z-index: 1;
+}
+
+.boll-light {
+	background: #06709c;
+  width: 154px * $wapuu-scale;
+  height: 164px * $wapuu-scale;
+  position: absolute;
+  top: 93px * $wapuu-scale;
+  left: 62px * $wapuu-scale;
+  border-radius: #{170px * $wapuu-scale 190px * $wapuu-scale 198px * $wapuu-scale 150px * $wapuu-scale} / #{170px * $wapuu-scale 190px * $wapuu-scale 184px * $wapuu-scale 204px * $wapuu-scale};
+}
+
+.w-circle {
+	background: #fff;
+  width: 125px * $wapuu-scale;
+  height: 140px * $wapuu-scale;
+  position: absolute;
+  top: 104px * $wapuu-scale;
+  left: 67px * $wapuu-scale;
+  border-radius: #{160px * $wapuu-scale 140px * $wapuu-scale 159px * $wapuu-scale 140px * $wapuu-scale} / #{180px * $wapuu-scale 150px * $wapuu-scale 178px * $wapuu-scale 148px * $wapuu-scale};
+}
+
+.w-circle-inner {
+	background: #06709c;
+  width: 113px * $wapuu-scale;
+  height: 127px * $wapuu-scale;
+  position: absolute;
+  top: 110px * $wapuu-scale;
+  left: 71px * $wapuu-scale;
+  border-radius: #{160px * $wapuu-scale 140px * $wapuu-scale 161px * $wapuu-scale 146px * $wapuu-scale} / #{180px * $wapuu-scale 150px * $wapuu-scale 186px * $wapuu-scale 145px * $wapuu-scale};
+}
+
+/*---------------------------------------
+
+  wの字
+
+---------------------------------------*/
+.w-1 {
+	background: #FFF;
+	width: 101px * $wapuu-scale;
+  height: 18px * $wapuu-scale;
+  position: absolute;
+  top: 184px * $wapuu-scale;
+  left: 42px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 4px * $wapuu-scale 131px * $wapuu-scale 80px * $wapuu-scale} / #{0px * $wapuu-scale 2px * $wapuu-scale 37px * $wapuu-scale 22px * $wapuu-scale};
+  -webkit-transform: rotate(73deg);
+     -moz-transform: rotate(73deg);
+      -ms-transform: rotate(73deg);
+       -o-transform: rotate(73deg);
+          transform: rotate(73deg);
+}
+
+.w-2 {
+	background: #06709c;
+	width: 117px * $wapuu-scale;
+  height: 58px * $wapuu-scale;
+  position: absolute;
+  top: 145px * $wapuu-scale;
+  left: 61px * $wapuu-scale;
+  border-radius: #{19px * $wapuu-scale 35px * $wapuu-scale 75px * $wapuu-scale 65px * $wapuu-scale} / #{25px * $wapuu-scale 25px * $wapuu-scale 35px * $wapuu-scale 35px * $wapuu-scale};
+  -webkit-transform: rotate(73deg);
+     -moz-transform: rotate(73deg);
+      -ms-transform: rotate(73deg);
+       -o-transform: rotate(73deg);
+          transform: rotate(73deg);
+}
+
+.w-3 {
+	background: #fff;
+	width: 20px * $wapuu-scale;
+	height: 5px * $wapuu-scale;
+	position: absolute;
+	top: 139px * $wapuu-scale;
+  left: 76px * $wapuu-scale;
+	border-radius: 6px * $wapuu-scale;
+  -webkit-transform: rotate(-18deg);
+     -moz-transform: rotate(-18deg);
+      -ms-transform: rotate(-18deg);
+       -o-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+}
+
+.w-4 {
+	background: #FFF;
+	width: 70px * $wapuu-scale;
+  height: 18px * $wapuu-scale;
+  position: absolute;
+  top: 190px * $wapuu-scale;
+  left: 83px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 4px * $wapuu-scale 131px * $wapuu-scale 80px * $wapuu-scale} / #{0px * $wapuu-scale 2px * $wapuu-scale 37px * $wapuu-scale 22px * $wapuu-scale};
+  -webkit-transform: rotate(99deg);
+     -moz-transform: rotate(99deg);
+      -ms-transform: rotate(99deg);
+       -o-transform: rotate(99deg);
+          transform: rotate(99deg);
+}
+
+.w-5 {
+	background: #06709c;
+	width: 68px * $wapuu-scale;
+  height: 18px * $wapuu-scale;
+  position: absolute;
+  top: 194px * $wapuu-scale;
+  left: 89px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 20px * $wapuu-scale 131px * $wapuu-scale 80px * $wapuu-scale} / #{0px * $wapuu-scale 22px * $wapuu-scale 22px * $wapuu-scale 22px * $wapuu-scale};
+  -webkit-transform: rotate(98deg);
+     -moz-transform: rotate(98deg);
+      -ms-transform: rotate(98deg);
+       -o-transform: rotate(98deg);
+          transform: rotate(98deg);
+}
+
+.w-6 {
+	background: #FFF;
+	width: 119px * $wapuu-scale;
+  height: 22px * $wapuu-scale;
+  position: absolute;
+  top: 168px * $wapuu-scale;
+  left: 72px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 4px * $wapuu-scale 131px * $wapuu-scale 80px * $wapuu-scale} / #{0px * $wapuu-scale 2px * $wapuu-scale 19px * $wapuu-scale 22px * $wapuu-scale};
+  -webkit-transform: rotate(71deg);
+     -moz-transform: rotate(71deg);
+      -ms-transform: rotate(71deg);
+       -o-transform: rotate(71deg);
+          transform: rotate(71deg);
+}
+
+.w-7 {
+	background: #06709c;
+	width: 119px * $wapuu-scale;
+  height: 22px * $wapuu-scale;
+  position: absolute;
+  top: 161px * $wapuu-scale;
+  left: 89px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 4px * $wapuu-scale 131px * $wapuu-scale 80px * $wapuu-scale} / #{0px * $wapuu-scale 2px * $wapuu-scale 19px * $wapuu-scale 22px * $wapuu-scale};
+  -webkit-transform: rotate(71deg);
+     -moz-transform: rotate(71deg);
+      -ms-transform: rotate(71deg);
+       -o-transform: rotate(71deg);
+          transform: rotate(71deg);
+}
+
+.w-8 {
+	background: #fff;
+	width: 35px * $wapuu-scale;
+	height: 5px * $wapuu-scale;
+	position: absolute;
+	top: 134px * $wapuu-scale;
+  left: 102px * $wapuu-scale;
+	border-radius: 6px * $wapuu-scale;
+  -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.w-9 {
+	background: #06709c;
+	width: 20px * $wapuu-scale;
+	height: 18px * $wapuu-scale;
+	position: absolute;
+	top: 116px * $wapuu-scale;
+  left: 107px * $wapuu-scale;
+  -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.w-10 {
+	background: #FFF;
+	width: 30px * $wapuu-scale;
+	height: 20px * $wapuu-scale;
+	position: absolute;
+	top: 125px * $wapuu-scale;
+  left: 146px * $wapuu-scale;
+  border-radius: #{85px * $wapuu-scale} / #{70px * $wapuu-scale};
+  -webkit-transform: rotate(59deg);
+     -moz-transform: rotate(59deg);
+      -ms-transform: rotate(59deg);
+       -o-transform: rotate(59deg);
+          transform: rotate(59deg);
+}
+
+.w-11 {
+	background: #FFF;
+	width: 55px * $wapuu-scale;
+	height: 20px * $wapuu-scale;
+	position: absolute;
+	top: 134px * $wapuu-scale;
+  left: 138px * $wapuu-scale;
+  border-radius: #{195px * $wapuu-scale} / #{44px * $wapuu-scale};
+  -webkit-transform: rotate(93deg);
+     -moz-transform: rotate(93deg);
+      -ms-transform: rotate(93deg);
+       -o-transform: rotate(93deg);
+          transform: rotate(93deg);
+}
+
+.w-12 {
+	background: #06709c;
+	width: 33px * $wapuu-scale;
+	height: 20px * $wapuu-scale;
+	position: absolute;
+	top: 151px * $wapuu-scale;
+  left: 135px * $wapuu-scale;
+  border-radius: #{98px * $wapuu-scale} / #{44px * $wapuu-scale};
+  -webkit-transform: rotate(83deg);
+     -moz-transform: rotate(83deg);
+      -ms-transform: rotate(83deg);
+       -o-transform: rotate(83deg);
+          transform: rotate(83deg);
+}
+
+.w-13 {
+	background: #FFF;
+	width: 70px * $wapuu-scale;
+  height: 9px * $wapuu-scale;
+  position: absolute;
+  top: 190px * $wapuu-scale;
+  left: 124px * $wapuu-scale;
+  -webkit-transform: rotate(106deg);
+     -moz-transform: rotate(106deg);
+      -ms-transform: rotate(106deg);
+       -o-transform: rotate(106deg);
+          transform: rotate(106deg);
+}
+
+/*---------------------------------------
+
+  体の塗り
+
+---------------------------------------*/
+.body {
+  background-color: #ffd215;
+  width: 63px * $wapuu-scale;
+  height: 50px * $wapuu-scale;
+  position: absolute;
+  top: 97px * $wapuu-scale;
+  left: 251px * $wapuu-scale;
+  border-radius: #{12px * $wapuu-scale 70px * $wapuu-scale 0 22px * $wapuu-scale} / #{29px * $wapuu-scale 80px * $wapuu-scale 0 29px * $wapuu-scale};
+  -webkit-transform: rotate(41deg);
+     -moz-transform: rotate(41deg);
+      -ms-transform: rotate(41deg);
+       -o-transform: rotate(41deg);
+          transform: rotate(41deg);
+}
+
+.body::before {
+  content: "";
+  background-color: #ffd215;
+  width: 113px * $wapuu-scale;
+  height: 31px * $wapuu-scale;
+  position: absolute;
+  top: 7px * $wapuu-scale;
+  left: -20px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale 80px * $wapuu-scale 10px * $wapuu-scale 6px * $wapuu-scale} / #{49px * $wapuu-scale 40px * $wapuu-scale 20px * $wapuu-scale 10px * $wapuu-scale};
+  -webkit-transform: rotate(40deg);
+     -moz-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+       -o-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.body::after {
+  content: "";
+  background-color: #ffd215;
+  width: 115px * $wapuu-scale;
+  height: 30px * $wapuu-scale;
+  position: absolute;
+  top: 53px * $wapuu-scale;
+  left: 24px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale 80px * $wapuu-scale 10px * $wapuu-scale 6px * $wapuu-scale} / #{49px * $wapuu-scale 40px * $wapuu-scale 20px * $wapuu-scale 10px * $wapuu-scale};
+  -webkit-transform: rotate(53deg);
+     -moz-transform: rotate(53deg);
+      -ms-transform: rotate(53deg);
+       -o-transform: rotate(53deg);
+          transform: rotate(53deg);
+}
+
+/* おなかの線の微調整 */
+.belly {
+  background-color: #000;
+  width: 18px * $wapuu-scale;
+  height: 6px * $wapuu-scale;
+  position: absolute;
+  top: 149px * $wapuu-scale;
+  left: 266px * $wapuu-scale;
+  border-radius: #{48px * $wapuu-scale} / #{30px * $wapuu-scale};
+  -webkit-transform: rotate(-140deg);
+     -moz-transform: rotate(-140deg);
+      -ms-transform: rotate(-140deg);
+       -o-transform: rotate(-140deg);
+          transform: rotate(-140deg);
+  z-index: 2;
+}
+
+.belly::after {
+  content: "";
+  background-color: #000;
+  width: 18px * $wapuu-scale;
+  height: 6px * $wapuu-scale;
+  position: absolute;
+  top: -49px * $wapuu-scale;
+  left: -42px * $wapuu-scale;
+  border-radius: #{48px * $wapuu-scale} / #{30px * $wapuu-scale};
+  -webkit-transform: rotate(-185deg);
+     -moz-transform: rotate(-185deg);
+      -ms-transform: rotate(-185deg);
+       -o-transform: rotate(-185deg);
+          transform: rotate(-185deg);
+}
+
+.belly::before {
+  content: "";
+  background-color: #000;
+  width: 48px * $wapuu-scale;
+  height: 5px * $wapuu-scale;
+  position: absolute;
+  top: -25px * $wapuu-scale;
+  left: -37px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(55deg);
+     -moz-transform: rotate(55deg);
+      -ms-transform: rotate(55deg);
+       -o-transform: rotate(55deg);
+          transform: rotate(55deg);
+}
+
+/*---------------------------------------
+
+  顔
+
+---------------------------------------*/
+.line-face1 {
+	background-color: #000;
+  width: 74px * $wapuu-scale;
+  height: 37px * $wapuu-scale;
+  position: absolute;
+  top: 56px * $wapuu-scale;
+  left: 96px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{41px * $wapuu-scale};
+  -webkit-transform: rotate(-43deg);
+     -moz-transform: rotate(-43deg);
+      -ms-transform: rotate(-43deg);
+       -o-transform: rotate(-43deg);
+          transform: rotate(-43deg);
+}
+
+.line-face2 {
+	background-color: #000;
+  width: 74px * $wapuu-scale;
+  height: 37px * $wapuu-scale;
+  position: absolute;
+  top: 52px * $wapuu-scale;
+  left: 146px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{41px * $wapuu-scale};
+  -webkit-transform: rotate(-7deg);
+     -moz-transform: rotate(-7deg);
+      -ms-transform: rotate(-7deg);
+       -o-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+}
+
+.face {
+  background-color: #ffd215;
+  width: 77px * $wapuu-scale;
+  height: 35px * $wapuu-scale;
+  position: absolute;
+  top: 48px * $wapuu-scale;
+  left: 96px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{39px * $wapuu-scale};
+  -webkit-transform: rotate(-47deg);
+     -moz-transform: rotate(-47deg);
+      -ms-transform: rotate(-47deg);
+       -o-transform: rotate(-47deg);
+          transform: rotate(-47deg);
+}
+
+.face::after {
+  content: "";
+  background-color: #ffd215;
+  width: 98px * $wapuu-scale;
+  height: 59px * $wapuu-scale;
+  position: absolute;
+  top: 15px * $wapuu-scale;
+  left: 35px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{49px * $wapuu-scale};
+  -webkit-transform: rotate(37deg);
+     -moz-transform: rotate(37deg);
+      -ms-transform: rotate(37deg);
+       -o-transform: rotate(37deg);
+          transform: rotate(37deg);
+}
+
+.face::before {
+  content: "";
+  background-color: #ffd215;
+  width: 120px * $wapuu-scale;
+  height: 55px * $wapuu-scale;
+  position: absolute;
+  top: 21px * $wapuu-scale;
+  left: 30px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{39px * $wapuu-scale};
+  -webkit-transform: rotate(42deg);
+     -moz-transform: rotate(42deg);
+      -ms-transform: rotate(42deg);
+       -o-transform: rotate(42deg);
+          transform: rotate(42deg);
+}
+
+/* 口元微調整 */
+.mouth {
+  background-color: #000;
+  width: 9px * $wapuu-scale;
+  height: 6px * $wapuu-scale;
+  position: absolute;
+  top: 77px * $wapuu-scale;
+  left: 198px * $wapuu-scale;
+  border-radius: 50%;
+  -webkit-transform: rotate(-39deg);
+       -moz-transform: rotate(-39deg);
+        -ms-transform: rotate(-39deg);
+         -o-transform: rotate(-39deg);
+            transform: rotate(-39deg);
+}
+
+/*---------------------------------------
+
+  手
+
+---------------------------------------*/
+.line-right-hand {
+	background: #000;
+	width: 35px * $wapuu-scale;
+	height: 36px * $wapuu-scale;
+	position: absolute;
+  top: 93px * $wapuu-scale;
+  left: 73px * $wapuu-scale;
+  border-radius: 20px * $wapuu-scale;
+}
+
+.line-right-hand::after {
+	content: "";
+	background: #000;
+	width: 35px * $wapuu-scale;
+	height: 30px * $wapuu-scale;
+	position: absolute;
+  top: 7px * $wapuu-scale;
+  left: -4px * $wapuu-scale;
+  border-radius: 20px * $wapuu-scale;
+}
+
+.line-left-hand {
+	background-color: #000;
+  width: 114px * $wapuu-scale;
+	height: 43px * $wapuu-scale;
+  position: absolute;
+  top: 78px * $wapuu-scale;
+  left: 146px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{41px * $wapuu-scale};
+  -webkit-transform: rotate(-20deg);
+  	 -moz-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+  	   -o-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.line-left-hand::after {
+	content: "";
+	background-color: #000;
+  width: 87px * $wapuu-scale;
+  height: 20px * $wapuu-scale;
+  position: absolute;
+  top: 65px * $wapuu-scale;
+  left: 60px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{121px * $wapuu-scale};
+  -webkit-transform: rotate(62deg);
+     -moz-transform: rotate(62deg);
+      -ms-transform: rotate(62deg);
+       -o-transform: rotate(62deg);
+          transform: rotate(62deg);
+}
+
+.line-left-hand::before {
+	content: "";
+	background-color: #000;
+  width: 84px * $wapuu-scale;
+  height: 24px * $wapuu-scale;
+  position: absolute;
+  top: 39px * $wapuu-scale;
+  left: 42px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 35px * $wapuu-scale 75px * $wapuu-scale 75px * $wapuu-scale} / #{25px * $wapuu-scale 25px * $wapuu-scale 54px * $wapuu-scale 35px * $wapuu-scale};
+  -webkit-transform: rotate(-149deg);
+     -moz-transform: rotate(-149deg);
+      -ms-transform: rotate(-149deg);
+       -o-transform: rotate(-149deg);
+          transform: rotate(-149deg);
+}
+
+.left-hand {
+  background-color: #ffd215;
+  width: 68px * $wapuu-scale;
+  height: 29px * $wapuu-scale;
+  position: absolute;
+  top: 90px * $wapuu-scale;
+  left: 155px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{39px * $wapuu-scale};
+  -webkit-transform: rotate(-18deg);
+     -moz-transform: rotate(-18deg);
+      -ms-transform: rotate(-18deg);
+       -o-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+}
+
+.left-hand::after {
+  content: "";
+  background-color: #000;
+  width: 54px * $wapuu-scale;
+  height: 11px * $wapuu-scale;
+  position: absolute;
+  top: 33px * $wapuu-scale;
+  left: 28px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale 82px * $wapuu-scale 0 0} / #{39px * $wapuu-scale 39px * $wapuu-scale 0 0};
+  -webkit-transform: rotate(21deg);
+     -moz-transform: rotate(21deg);
+      -ms-transform: rotate(21deg);
+       -o-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+
+.left-hand::before {
+  content: "";
+  background-color: #ffd215;
+  width: 79px * $wapuu-scale;
+  height: 32px * $wapuu-scale;
+  position: absolute;
+  top: 3px * $wapuu-scale;
+  left: 14px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale 82px * $wapuu-scale 0 0} / #{39px * $wapuu-scale 39px * $wapuu-scale 0 0};
+  -webkit-transform: rotate(21deg);
+     -moz-transform: rotate(21deg);
+      -ms-transform: rotate(21deg);
+       -o-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+
+.right-hand {
+  background-color: #ffd215;
+  width: 25px * $wapuu-scale;
+  height: 17px * $wapuu-scale;
+  position: absolute;
+  top: 105px * $wapuu-scale;
+  left: 80px * $wapuu-scale;
+  border-radius: #{32px * $wapuu-scale 31px * $wapuu-scale 41px * $wapuu-scale 25px * $wapuu-scale} / #{17px * $wapuu-scale 20px * $wapuu-scale 26px * $wapuu-scale 26px * $wapuu-scale};
+  -webkit-transform: rotate(-48deg);
+     -moz-transform: rotate(-48deg);
+      -ms-transform: rotate(-48deg);
+       -o-transform: rotate(-48deg);
+          transform: rotate(-48deg);
+}
+
+.arm {
+  background-color: #000;
+  width: 35px * $wapuu-scale;
+  height: 5px * $wapuu-scale;
+  position: absolute;
+  top: 82px * $wapuu-scale;
+  left: 203px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(188deg);
+     -moz-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+       -o-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+/* 腕の線、微調整 */
+.arm::before {
+  content: "";
+  background-color: #000;
+  width: 35px * $wapuu-scale;
+  height: 5px * $wapuu-scale;
+  position: absolute;
+  top: -40px * $wapuu-scale;
+  left: -33px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(27deg);
+     -moz-transform: rotate(27deg);
+      -ms-transform: rotate(27deg);
+       -o-transform: rotate(27deg);
+          transform: rotate(27deg);
+}
+
+/*---------------------------------------
+
+  耳
+
+---------------------------------------*/
+.line-left-ear {
+	background-color: #000;
+  width: 110px * $wapuu-scale;
+  height: 22px * $wapuu-scale;
+  position: absolute;
+  top: 27px * $wapuu-scale;
+  left: 251px * $wapuu-scale;
+  border-radius: #{132px * $wapuu-scale 100px * $wapuu-scale 70px * $wapuu-scale 110px * $wapuu-scale} / #{89px * $wapuu-scale 120px * $wapuu-scale 70px * $wapuu-scale 110px * $wapuu-scale};
+}
+
+.line-left-ear::after {
+  content: "";
+  background-color: #000;
+  width: 83px * $wapuu-scale;
+  height: 28px * $wapuu-scale;
+  position: absolute;
+  top: 12px * $wapuu-scale;
+  left: -4px * $wapuu-scale;
+  border-radius: #{100px * $wapuu-scale} / #{44px * $wapuu-scale};
+  -webkit-transform: rotate(29deg);
+     -moz-transform: rotate(29deg);
+      -ms-transform: rotate(29deg);
+       -o-transform: rotate(29deg);
+          transform: rotate(29deg);
+}
+
+.line-left-ear::before {
+  content: "";
+  background-color: #000;
+  width: 63px * $wapuu-scale;
+  height: 36px * $wapuu-scale;
+  position: absolute;
+  top: 8px * $wapuu-scale;
+  left: 49px * $wapuu-scale;
+  border-radius: #{100px * $wapuu-scale} / #{53px * $wapuu-scale};
+  -webkit-transform: rotate(-33deg);
+     -moz-transform: rotate(-33deg);
+      -ms-transform: rotate(-33deg);
+       -o-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+}
+
+.ear-left {
+  background-color: #fe8809;
+  width: 78px * $wapuu-scale;
+	height: 31px * $wapuu-scale;
+  position: absolute;
+  top: 36px * $wapuu-scale;
+  left: 275px * $wapuu-scale;
+  border-radius: 0 0 90px * $wapuu-scale 90px * $wapuu-scale;
+  -webkit-transform: rotate(-1deg);
+     -moz-transform: rotate(-1deg);
+      -ms-transform: rotate(-1deg);
+       -o-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+
+.ear-left::after {
+  content: "";
+  background-color: #fe8809;
+  width: 35px * $wapuu-scale;
+  height: 8px * $wapuu-scale;
+  position: absolute;
+  top: 9px * $wapuu-scale;
+  left: -15px * $wapuu-scale;
+  border-radius: #{70px * $wapuu-scale 35px * $wapuu-scale 10px * $wapuu-scale 88px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 16px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(33deg);
+     -moz-transform: rotate(33deg);
+      -ms-transform: rotate(33deg);
+       -o-transform: rotate(33deg);
+          transform: rotate(33deg);
+}
+
+.ear-left::before {
+  content: "";
+  width: 0px * $wapuu-scale;
+  height: 0px * $wapuu-scale;
+  position: absolute;
+  top: -13px * $wapuu-scale;
+  left: -13px * $wapuu-scale;
+  border-left: 15px * $wapuu-scale solid transparent;
+  border-right: 15px * $wapuu-scale solid transparent;
+  border-top: 40px * $wapuu-scale solid #fe8809;
+  border-radius: 50%;
+  -webkit-transform: rotate(110deg);
+     -moz-transform: rotate(110deg);
+      -ms-transform: rotate(110deg);
+       -o-transform: rotate(110deg);
+          transform: rotate(110deg);
+}
+
+.ear-right {
+  width: 0px * $wapuu-scale;
+  height: 0px * $wapuu-scale;
+  position: absolute;
+  top: 72px * $wapuu-scale;
+  left: 75px * $wapuu-scale;
+  border-left: 12px * $wapuu-scale solid transparent;
+  border-right: 12px * $wapuu-scale solid transparent;
+  border-top: 22px * $wapuu-scale solid #fe8809;
+  border-radius: 50%;
+  -webkit-transform: rotate(422deg);
+     -moz-transform: rotate(422deg);
+      -ms-transform: rotate(422deg);
+       -o-transform: rotate(422deg);
+          transform: rotate(422deg);
+}
+
+.ear-right::before {
+  content: "";
+  background-color: #000;
+  width: 29px * $wapuu-scale;
+  height: 9px * $wapuu-scale;
+  position: absolute;
+  top: -18px * $wapuu-scale;
+  left: -19px * $wapuu-scale;
+  border-radius: #{30px * $wapuu-scale} / #{12px * $wapuu-scale};
+  -webkit-transform: rotate(81deg);
+     -moz-transform: rotate(81deg);
+      -ms-transform: rotate(81deg);
+       -o-transform: rotate(81deg);
+          transform: rotate(81deg);
+}
+
+.ear-right::after {
+  content: "";
+  background-color: #000;
+  width: 15px * $wapuu-scale;
+  height: 7px * $wapuu-scale;
+  position: absolute;
+  top: -26px * $wapuu-scale;
+  left: -1px * $wapuu-scale;
+  border-radius: #{30px * $wapuu-scale} / #{16px * $wapuu-scale};
+  -webkit-transform: rotate(21deg);
+     -moz-transform: rotate(21deg);
+      -ms-transform: rotate(21deg);
+       -o-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+
+/*---------------------------------------
+
+  足
+
+---------------------------------------*/
+.line-left-leg {
+  background-color: #000;
+  width: 83px * $wapuu-scale;
+  height: 80px * $wapuu-scale;
+  position: absolute;
+  top: 207px * $wapuu-scale;
+  left: 208px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{74px * $wapuu-scale};
+  -webkit-transform: rotate(-20deg);
+     -moz-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+       -o-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.line-left-leg::after {
+  content: "";
+  background-color: #000;
+  width: 93px * $wapuu-scale;
+  height: 62px * $wapuu-scale;
+  position: absolute;
+  top: 3px * $wapuu-scale;
+  left: -21px * $wapuu-scale;
+  border-radius: #{76px * $wapuu-scale} / #{53px * $wapuu-scale};
+  -webkit-transform: rotate(-27deg);
+     -moz-transform: rotate(-27deg);
+      -ms-transform: rotate(-27deg);
+       -o-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+}
+
+.line-left-foot {
+  background-color: #000;
+  width: 89px * $wapuu-scale;
+  height: 50px * $wapuu-scale;
+  position: absolute;
+  top: 220px * $wapuu-scale;
+  left: 140px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{49px * $wapuu-scale};
+  -webkit-transform: rotate(67deg);
+     -moz-transform: rotate(67deg);
+      -ms-transform: rotate(67deg);
+       -o-transform: rotate(67deg);
+          transform: rotate(67deg);
+}
+
+.line-left-foot::after {
+  content: "";
+  background-color: #000;
+  width: 84px * $wapuu-scale;
+  height: 49px * $wapuu-scale;
+  position: absolute;
+  top: 9px * $wapuu-scale;
+  left: 29px * $wapuu-scale;
+  border-radius: #{75px * $wapuu-scale 55px * $wapuu-scale 41px * $wapuu-scale 15px * $wapuu-scale} / #{54px * $wapuu-scale 40px * $wapuu-scale 36px * $wapuu-scale 25px * $wapuu-scale};
+  -webkit-transform: rotate(36deg);
+     -moz-transform: rotate(36deg);
+      -ms-transform: rotate(36deg);
+       -o-transform: rotate(36deg);
+          transform: rotate(36deg);
+}
+
+.line-left-foot::before {
+  content: "";
+  background-color: #000;
+  width: 84px * $wapuu-scale;
+  height: 49px * $wapuu-scale;
+  position: absolute;
+  top: 7px * $wapuu-scale;
+  left: 19px * $wapuu-scale;
+  border-radius: #{75px * $wapuu-scale 55px * $wapuu-scale 41px * $wapuu-scale 15px * $wapuu-scale} / #{54px * $wapuu-scale 40px * $wapuu-scale 36px * $wapuu-scale 25px * $wapuu-scale};
+  -webkit-transform: rotate(16deg);
+     -moz-transform: rotate(16deg);
+      -ms-transform: rotate(16deg);
+       -o-transform: rotate(16deg);
+          transform: rotate(16deg);
+}
+
+.line-right-foot {
+  background-color: #000;
+  width: 95px * $wapuu-scale;
+  height: 42px * $wapuu-scale;
+  position: absolute;
+  top: 232px * $wapuu-scale;
+  left: 17px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{39px * $wapuu-scale};
+  -webkit-transform: rotate(43deg);
+     -moz-transform: rotate(43deg);
+      -ms-transform: rotate(43deg);
+       -o-transform: rotate(43deg);
+          transform: rotate(43deg);
+}
+
+.line-right-foot::after {
+  content: "";
+  background-color: #000;
+  width: 101px * $wapuu-scale;
+  height: 40px * $wapuu-scale;
+  position: absolute;
+  top: -8px * $wapuu-scale;
+  left: -8px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{39px * $wapuu-scale};
+  -webkit-transform: rotate(15deg);
+     -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+       -o-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.line-right-foot::before {
+  content: "";
+  background-color: #000;
+  width: 52px * $wapuu-scale;
+  height: 44px * $wapuu-scale;
+  position: absolute;
+  top: -10px * $wapuu-scale;
+  left: -11px * $wapuu-scale;
+  border-radius: #{47px * $wapuu-scale} / #{39px * $wapuu-scale};
+  -webkit-transform: rotate(59deg);
+     -moz-transform: rotate(59deg);
+      -ms-transform: rotate(59deg);
+       -o-transform: rotate(59deg);
+          transform: rotate(59deg);
+}
+
+.left-leg {
+  background-color: #ffd215;
+  width: 79px * $wapuu-scale;
+  height: 62px * $wapuu-scale;
+  position: absolute;
+  top: 215px * $wapuu-scale;
+  left: 205px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{55px * $wapuu-scale};
+  -webkit-transform: rotate(-21deg);
+     -moz-transform: rotate(-21deg);
+      -ms-transform: rotate(-21deg);
+       -o-transform: rotate(-21deg);
+          transform: rotate(-21deg);
+}
+
+.left-leg::after {
+  content: "";
+  background-color: #ffd215;
+  width: 64px * $wapuu-scale;
+  height: 25px * $wapuu-scale;
+  position: absolute;
+  top: 24px * $wapuu-scale;
+  left: 43px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{37px * $wapuu-scale};
+  -webkit-transform: rotate(-35deg);
+     -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+       -o-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.left-leg::before {
+  content: "";
+  background-color: #ffd215;
+  width: 94px * $wapuu-scale;
+  height: 37px * $wapuu-scale;
+  position: absolute;
+  top: 26px * $wapuu-scale;
+  left: -27px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{37px * $wapuu-scale};
+  -webkit-transform: rotate(2deg);
+     -moz-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+       -o-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.left-foot {
+  background-color: #ffd215;
+  width: 66px * $wapuu-scale;
+  height: 33px * $wapuu-scale;
+  position: absolute;
+  top: 226px * $wapuu-scale;
+  left: 151px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{41px * $wapuu-scale};
+  -webkit-transform: rotate(67deg);
+     -moz-transform: rotate(67deg);
+      -ms-transform: rotate(67deg);
+       -o-transform: rotate(67deg);
+          transform: rotate(67deg);
+}
+
+.left-foot::after {
+  content: "";
+  background-color: #ffd215;
+  width: 64px * $wapuu-scale;
+  height: 32px * $wapuu-scale;
+  position: absolute;
+  top: 7px * $wapuu-scale;
+  left: 26px * $wapuu-scale;
+  border-radius: #{75px * $wapuu-scale 45px * $wapuu-scale 42px * $wapuu-scale 19px * $wapuu-scale} / #{44px * $wapuu-scale 40px * $wapuu-scale 36px * $wapuu-scale 25px * $wapuu-scale};
+  -webkit-transform: rotate(37deg);
+     -moz-transform: rotate(37deg);
+      -ms-transform: rotate(37deg);
+       -o-transform: rotate(37deg);
+          transform: rotate(37deg);
+}
+
+.left-foot::before {
+  content: "";
+  background-color: #ffd215;
+  width: 64px * $wapuu-scale;
+  height: 32px * $wapuu-scale;
+  position: absolute;
+  top: 8px * $wapuu-scale;
+  left: 19px * $wapuu-scale;
+  border-radius: #{75px * $wapuu-scale 45px * $wapuu-scale 42px * $wapuu-scale 19px * $wapuu-scale} / #{44px * $wapuu-scale 40px * $wapuu-scale 36px * $wapuu-scale 25px * $wapuu-scale};
+  -webkit-transform: rotate(20deg);
+     -moz-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+       -o-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.right-foot {
+  background-color: #ffd215;
+  width: 79px * $wapuu-scale;
+  height: 24px * $wapuu-scale;
+  position: absolute;
+  top: 234px * $wapuu-scale;
+  left: 26px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{32px * $wapuu-scale};
+  -webkit-transform: rotate(51deg);
+     -moz-transform: rotate(51deg);
+      -ms-transform: rotate(51deg);
+       -o-transform: rotate(51deg);
+          transform: rotate(51deg);
+}
+
+.right-foot::after {
+  content: "";
+  background-color: #ffd215;
+  width: 72px * $wapuu-scale;
+  height: 32px * $wapuu-scale;
+  position: absolute;
+  top: -5px * $wapuu-scale;
+  left: -1px * $wapuu-scale;
+  border-radius: #{45px * $wapuu-scale 150px * $wapuu-scale 92px * $wapuu-scale 49px * $wapuu-scale} / #{44px * $wapuu-scale 40px * $wapuu-scale 36px * $wapuu-scale 45px * $wapuu-scale};
+  -webkit-transform: rotate(1deg);
+     -moz-transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+       -o-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.thenar {
+  background-color: #000;
+  width: 40px * $wapuu-scale;
+  height: 7px * $wapuu-scale;
+  position: absolute;
+  top: 258px * $wapuu-scale;
+  left: 146px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(-92deg);
+     -moz-transform: rotate(-92deg);
+      -ms-transform: rotate(-92deg);
+       -o-transform: rotate(-92deg);
+          transform: rotate(-92deg);
+}
+
+/*---------------------------------------
+
+  首
+
+---------------------------------------*/
+.neck {
+  background-color: #ffd215;
+  width: 109px * $wapuu-scale;
+  height: 50px * $wapuu-scale;
+  position: absolute;
+  top: 43px * $wapuu-scale;
+  left: 200px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale} / #{39px * $wapuu-scale};
+  -webkit-transform: rotate(47deg);
+     -moz-transform: rotate(47deg);
+      -ms-transform: rotate(47deg);
+       -o-transform: rotate(47deg);
+          transform: rotate(47deg);
+}
+
+.neck::after {
+  content: "";
+  background-color: #ffd215;
+  width: 40px * $wapuu-scale;
+  height: 15px * $wapuu-scale;
+  position: absolute;
+  top: 45px * $wapuu-scale;
+  left: 20px * $wapuu-scale;
+  border-radius: #{75px * $wapuu-scale 35px * $wapuu-scale 35px * $wapuu-scale 15px * $wapuu-scale} / #{54px * $wapuu-scale 35px * $wapuu-scale 25px * $wapuu-scale 25px * $wapuu-scale};
+  -webkit-transform: rotate(-39deg);
+     -moz-transform: rotate(-39deg);
+      -ms-transform: rotate(-39deg);
+       -o-transform: rotate(-39deg);
+          transform: rotate(-39deg);
+}
+
+.neck::before {
+  content: "";
+  background-color: #ffd215;
+  width: 67px * $wapuu-scale;
+  height: 44px * $wapuu-scale;
+  position: absolute;
+  top: 25px * $wapuu-scale;
+  left: 59px * $wapuu-scale;
+  border-radius: #{82px * $wapuu-scale 80px * $wapuu-scale 0 82px * $wapuu-scale} / #{29px * $wapuu-scale 80px * $wapuu-scale 0 29px * $wapuu-scale};
+  -webkit-transform: rotate(-21deg);
+     -moz-transform: rotate(-21deg);
+      -ms-transform: rotate(-21deg);
+       -o-transform: rotate(-21deg);
+          transform: rotate(-21deg);
+}
+
+/*---------------------------------------
+
+  目
+
+---------------------------------------*/
+.eye-rignt {
+	background-color: #000;
+	width: 12px * $wapuu-scale;
+	height: 12px * $wapuu-scale;
+	position: absolute;
+	top: 58px * $wapuu-scale;
+	left: 118px * $wapuu-scale;
+	border-radius: 50%;
+}
+
+.eye-left {
+	background-color: #000;
+	width: 12px * $wapuu-scale;
+	height: 12px * $wapuu-scale;
+	position: absolute;
+	top: 42px * $wapuu-scale;
+	left: 187px * $wapuu-scale;
+	border-radius: 50%;
+}
+
+/*---------------------------------------
+
+  鼻
+
+---------------------------------------*/
+.nose {
+	background-color: #000;
+	width: 20px * $wapuu-scale;
+	height: 10px * $wapuu-scale;
+	position: absolute;
+	top: 59px * $wapuu-scale;
+	left: 141px * $wapuu-scale;
+	border-radius: #{10px * $wapuu-scale} / #{5px * $wapuu-scale};
+	-webkit-transform: rotate(-20deg);
+  	   -moz-transform: rotate(-20deg);
+  	    -ms-transform: rotate(-20deg);
+  	     -o-transform: rotate(-20deg);
+  	        transform: rotate(-20deg);
+}
+
+.nose::after {
+	content: "";
+	background-color: #000;
+	width: 18px * $wapuu-scale;
+	height: 10px * $wapuu-scale;
+	position: absolute;
+	left: 1px * $wapuu-scale;
+	bottom: -1px * $wapuu-scale;
+	border-radius: #{9px * $wapuu-scale} / #{5px * $wapuu-scale};
+}
+
+/*---------------------------------------
+
+  しっぽ
+
+---------------------------------------*/
+.line-tail1 {
+  background-color: #000;
+  width: 133px * $wapuu-scale;
+  height: 38px * $wapuu-scale;
+  position: absolute;
+  top: 288px * $wapuu-scale;
+  left: 174px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 35px * $wapuu-scale 105px * $wapuu-scale 135px * $wapuu-scale} / #{25px * $wapuu-scale 25px * $wapuu-scale 43px * $wapuu-scale 45px * $wapuu-scale};
+  -webkit-transform: rotate(-54deg);
+       -moz-transform: rotate(-54deg);
+        -ms-transform: rotate(-54deg);
+         -o-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+}
+
+.line-tail1::after {
+  content: "";
+  background-color: #000;
+  width: 109px * $wapuu-scale;
+  height: 39px * $wapuu-scale;
+  position: absolute;
+  top: -17px * $wapuu-scale;
+  left: -50px * $wapuu-scale;
+  border-radius: #{35px * $wapuu-scale 35px * $wapuu-scale 105px * $wapuu-scale 135px * $wapuu-scale} / #{25px * $wapuu-scale 25px * $wapuu-scale 63px * $wapuu-scale 65px * $wapuu-scale};
+  -webkit-transform: rotate(23deg);
+       -moz-transform: rotate(23deg);
+        -ms-transform: rotate(23deg);
+         -o-transform: rotate(23deg);
+            transform: rotate(23deg);
+}
+
+.line-tail1::before {
+  content: "";
+  background-color: #000;
+  width: 103px * $wapuu-scale;
+  height: 44px * $wapuu-scale;
+  position: absolute;
+  top: -56px * $wapuu-scale;
+  left: -84px * $wapuu-scale;
+  border-radius: #{55px * $wapuu-scale} / #{26px * $wapuu-scale};
+  -webkit-transform: rotate(58deg);
+       -moz-transform: rotate(58deg);
+        -ms-transform: rotate(58deg);
+         -o-transform: rotate(58deg);
+            transform: rotate(58deg);
+}
+
+.line-tail2 {
+  background-color: #000;
+  width: 82px * $wapuu-scale;
+  height: 55px * $wapuu-scale;
+  position: absolute;
+  top: 306px * $wapuu-scale;
+  left: 58px * $wapuu-scale;
+  border-radius: #{55px * $wapuu-scale} / #{40px * $wapuu-scale};
+  -webkit-transform: rotate(47deg);
+       -moz-transform: rotate(47deg);
+        -ms-transform: rotate(47deg);
+         -o-transform: rotate(47deg);
+            transform: rotate(47deg);
+}
+
+.line-tail2::after {
+  content: "";
+  background-color: #000;
+  width: 52px * $wapuu-scale;
+  height: 15px * $wapuu-scale;
+  position: absolute;
+  top: -3px * $wapuu-scale;
+  left: 46px * $wapuu-scale;
+  border-radius: #{55px * $wapuu-scale} / #{40px * $wapuu-scale};
+  -webkit-transform: rotate(-20deg);
+       -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+         -o-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+}
+
+.line-tail2::before {
+  content: "";
+  background-color: #000;
+  width: 72px * $wapuu-scale;
+  height: 15px * $wapuu-scale;
+  position: absolute;
+  top: -23px * $wapuu-scale;
+  left: 56px * $wapuu-scale;
+  border-radius: #{55px * $wapuu-scale} / #{40px * $wapuu-scale};
+  -webkit-transform: rotate(119deg);
+       -moz-transform: rotate(119deg);
+        -ms-transform: rotate(119deg);
+         -o-transform: rotate(119deg);
+            transform: rotate(119deg);
+}
+
+.tail1 {
+  background-color: #fe8809;
+  width: 70px * $wapuu-scale;
+  height: 16px * $wapuu-scale;
+  position: absolute;
+  top: 300px * $wapuu-scale;
+  left: 205px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 60px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 20px * $wapuu-scale};
+  -webkit-transform: rotate(-51deg);
+     -moz-transform: rotate(-51deg);
+      -ms-transform: rotate(-51deg);
+       -o-transform: rotate(-51deg);
+          transform: rotate(-51deg);
+}
+
+.tail1::after {
+  content: "";
+  background-color: #fe8809;
+  width: 95px * $wapuu-scale;
+  height: 18px * $wapuu-scale;
+  position: absolute;
+  top: -16px * $wapuu-scale;
+  left: -69px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 60px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 20px * $wapuu-scale};
+  -webkit-transform: rotate(24deg);
+     -moz-transform: rotate(24deg);
+      -ms-transform: rotate(24deg);
+       -o-transform: rotate(24deg);
+          transform: rotate(24deg);
+}
+
+.tail1::before {
+  content: "";
+  background-color: #fe8809;
+  width: 80px * $wapuu-scale;
+  height: 21px * $wapuu-scale;
+  position: absolute;
+  top: -53px * $wapuu-scale;
+  left: -105px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 60px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 20px * $wapuu-scale};
+  -webkit-transform: rotate(57deg);
+     -moz-transform: rotate(57deg);
+      -ms-transform: rotate(57deg);
+       -o-transform: rotate(57deg);
+          transform: rotate(57deg);
+}
+
+.tail2 {
+  background-color: #fe8809;
+  width: 53px * $wapuu-scale;
+  height: 32px * $wapuu-scale;
+  position: absolute;
+  top: 317px * $wapuu-scale;
+  left: 73px * $wapuu-scale;
+  border-radius: #{70px * $wapuu-scale} / #{44px * $wapuu-scale};
+  -webkit-transform: rotate(44deg);
+     -moz-transform: rotate(44deg);
+      -ms-transform: rotate(44deg);
+       -o-transform: rotate(44deg);
+          transform: rotate(44deg);
+}
+
+.tail2::after {
+  content: "";
+  background-color: #fe8809;
+  width: 35px * $wapuu-scale;
+  height: 14px * $wapuu-scale;
+  position: absolute;
+  top: 3px * $wapuu-scale;
+  left: 26px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 60px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 20px * $wapuu-scale};
+  -webkit-transform: rotate(-11deg);
+     -moz-transform: rotate(-11deg);
+      -ms-transform: rotate(-11deg);
+       -o-transform: rotate(-11deg);
+          transform: rotate(-11deg);
+}
+
+.tail3 {
+  background-color: #fff;
+  width: 42px * $wapuu-scale;
+  height: 16px * $wapuu-scale;
+  position: absolute;
+  top: 319px * $wapuu-scale;
+  left: 126px * $wapuu-scale;
+  border-radius: #{45px * $wapuu-scale 50px * $wapuu-scale 142px * $wapuu-scale 99px * $wapuu-scale} / #{24px * $wapuu-scale 50px * $wapuu-scale 40px * $wapuu-scale 65px * $wapuu-scale};
+  -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+       -o-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.tail3::before {
+  content: "";
+  background-color: #fff;
+  width: 30px * $wapuu-scale;
+  height: 13px * $wapuu-scale;
+  position: absolute;
+  top: -3px * $wapuu-scale;
+  left: 31px * $wapuu-scale;
+  border-radius: #{45px * $wapuu-scale 50px * $wapuu-scale 102px * $wapuu-scale 99px * $wapuu-scale} / #{24px * $wapuu-scale 50px * $wapuu-scale 60px * $wapuu-scale 65px * $wapuu-scale};
+  -webkit-transform: rotate(-27deg);
+     -moz-transform: rotate(-27deg);
+      -ms-transform: rotate(-27deg);
+       -o-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+}
+
+.tail4 {
+  background-color: #000;
+  width: 73px * $wapuu-scale;
+  height: 10px * $wapuu-scale;
+  position: absolute;
+  top: 324px * $wapuu-scale;
+  left: 158px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(-28deg);
+     -moz-transform: rotate(-28deg);
+      -ms-transform: rotate(-28deg);
+       -o-transform: rotate(-28deg);
+          transform: rotate(-28deg);
+}
+
+.tail4::after {
+  content: "";
+  background-color: #000;
+  width: 43px * $wapuu-scale;
+  height: 10px * $wapuu-scale;
+  position: absolute;
+  top: -6px * $wapuu-scale;
+  left: 59px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 70px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 20px * $wapuu-scale 19px * $wapuu-scale};
+  -webkit-transform: rotate(-19deg);
+     -moz-transform: rotate(-19deg);
+      -ms-transform: rotate(-19deg);
+       -o-transform: rotate(-19deg);
+          transform: rotate(-19deg);
+}
+
+.tail4::before {
+  content: "";
+  background-color: #000;
+  width: 53px * $wapuu-scale;
+  height: 12px * $wapuu-scale;
+  position: absolute;
+  top: -14px * $wapuu-scale;
+  left: -38px * $wapuu-scale;
+  border-radius: #{10px * $wapuu-scale 70px * $wapuu-scale 75px * $wapuu-scale 48px * $wapuu-scale} / #{10px * $wapuu-scale 10px * $wapuu-scale 21px * $wapuu-scale 23px * $wapuu-scale};
+  -webkit-transform: rotate(40deg);
+     -moz-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+       -o-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
