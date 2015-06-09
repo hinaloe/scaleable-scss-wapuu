@@ -45,4 +45,20 @@ footer {
     color: darken(#6391E4, 15%);
   }
 
+  .ds {
+    display: inline-block;
+  }
+  .ms {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .ds {
+      display: none;
+    }
+    .ms {
+      display: inline-block;
+    }
+  }
+
 }

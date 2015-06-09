@@ -5675,5 +5675,19 @@ footer {
 footer a {
   color: #2564d6;
 }
+footer .ds {
+  display: inline-block;
+}
+footer .ms {
+  display: none;
+}
+@media (max-width: 600px) {
+  footer .ds {
+    display: none;
+  }
+  footer .ms {
+    display: inline-block;
+  }
+}
 
 /*# sourceMappingURL=example.css.map */
