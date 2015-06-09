@@ -8,7 +8,7 @@ WordPress ソフトウェアと同じく [GPL バージョン 2](http://www.gnu.
 ただし、著作権はキャラクター作成者のカネウチカズコさんが保有します。
 
 ### GitHub Page
-http://hnle.tk/scalable-scss-wapuu/
+http://hnle.tk/scaleable-scss-wapuu/
 
 -----
 
